@@ -1,0 +1,31 @@
+[tool.ruff]
+line-length = 79
+target-version = "py311"
+
+select = [
+    "A",  # prevent using keywords that clobber python builtins
+    "B",  # bugbear: security warnings
+    "E",  # pycodestyle
+    "F",  # pyflakes
+    "ISC",  # implicit string concatenation
+    "UP",  # alert you when better syntax is available in your python version
+    "T",
+    "W",
+    "I",
+    "D",
+    "U",
+    "N",
+    "S",
+    "C",
+    "ANN",
+    "M",
+]
+
+ignore = [
+    "ANN101",
+    "S101",
+]
+
+ignore-init-module-imports = true
+
+exclude = ["naming_synchronizer.py"]
